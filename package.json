@@ -1,0 +1,53 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.15",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@webpack-cli/generators": "^2.5.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "*",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "description": "",
+  "scripts": {
+    "stylecheck": "yarn prettier ./ -c",
+    "fix": "yarn prettier ./ -w && yarn eslint ./ --fix",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "dotenv-webpack": "^8.0.1",
+    "mini-css-extract-plugin": "^2.7.2",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.5"
+  }
+}

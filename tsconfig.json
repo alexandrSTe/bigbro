@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "ES6",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src",
+    "ext.d.ts"
+  ],
+  
+  "files": ["src/index.tsx"]
+}
